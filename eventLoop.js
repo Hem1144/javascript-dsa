@@ -8,6 +8,6 @@ console.log("Middle");
 
 setTimeout(() => {
   console.log("Async operation 2 completed");
-}, 1000);
+}, 0);
 
 console.log("End");
