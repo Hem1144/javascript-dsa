@@ -1,12 +1,25 @@
-const validatePalindrome = (args) => {
-  let reverseArgs = args.toString().split("").reverse().join("");
-  let orgArgs = args.toString();
+function isPalindrome(s) {
+  //! Remove non-alphanumeric characters and convert to lowercase
+  const formattedString = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
 
-  if (reverseArgs !== orgArgs) {
-    return false;
-  } else {
-    return true;
+  //* alternative method
+  // const reverseString = formattedString.split("").reverse().join("");
+
+  //! Check if the formattedString is a palindrome
+  let left = 0;
+  let right = formattedString.length - 1;
+
+  while (left < right) {
+    if (formattedString[left] !== formattedString[right]) {
+      return false;
+    }
+    left++;
+    right--;
   }
-};
 
-console.log(validatePalindrome("madam"));
+  return true;
+}
+
+console.log(isPalindrome("A man, a plan, a canal: Panama"));
+// console.log(isPalindrome("race a car"));
+// console.log(isPalindrome(" "));
