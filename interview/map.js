@@ -11,3 +11,4 @@ function triple(x) {
 const output = arr.map((x) => x.toString(2));
 
 console.log(output);
+console.log(arr);
