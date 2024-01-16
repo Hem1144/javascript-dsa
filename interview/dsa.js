@@ -27,6 +27,13 @@
 // console.log(result);
 
 //! third method
-const fibo = (n) => (n <= 1 ? n : fibo(n - 1) + fibo(n - 2));
+// const fibo = (n) => (n <= 1 ? n : fibo(n - 1) + fibo(n - 2));
+// console.log(fibo(4));
 
-console.log(fibo(4));
+//! Valid Anagram
+const isAnagram = function (s, t) {
+  s = s.split("").sort().join("");
+  t = t.split("").sort().join("");
+  return s === t;
+};
+console.log(isAnagram("nagaram", "anagram"));
