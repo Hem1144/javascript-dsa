@@ -37,7 +37,7 @@ class LinkedList {
   }
 }
 
-// Example usage:
+//! Example usage:
 const linkedList = new LinkedList();
 linkedList.append(1);
 linkedList.append(2);
@@ -46,7 +46,7 @@ linkedList.append(3);
 console.log("Original linked list:");
 linkedList.display();
 
-// Insert a new node at the end
+//! Insert a new node at the end
 linkedList.append(4);
 
 console.log("\nLinked list after inserting a new node at the end:");
