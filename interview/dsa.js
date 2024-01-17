@@ -50,6 +50,7 @@ const isAnagram = (s, t) => {
     obj2[t[i]] = (obj2[t[i]] || 0) + 1;
   }
   for (const key in obj1) {
+    console.log(obj1[key]);
     if (obj1[key] !== obj2[key]) return false;
   }
   return true;
