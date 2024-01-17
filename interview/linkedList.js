@@ -48,7 +48,7 @@ class linkedList {
       return;
     }
 
-    const newNode = new Node();
+    const newNode = new Node(data);
     if (index === 0) {
       newNode.next = this.head;
       this.head = newNode;
@@ -114,6 +114,7 @@ class linkedList {
 const linkedlist = new linkedList();
 linkedlist.addFirst(5);
 linkedlist.addFirst(3);
+linkedlist.addAt(2, 6);
 linkedlist.addFirst(8);
 linkedlist.addLast(7);
 linkedlist.removeAt(2);
