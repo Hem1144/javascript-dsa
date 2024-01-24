@@ -17,7 +17,7 @@ var isAnagram = function (s, t) {
   }
 
   //! Compare character counts in both strings
-  for (let key in charCountT) {
+  for (let key in charCountS) {
     if (charCountS[key] !== charCountT[key]) {
       return false; //! If counts don't match, they are not anagrams
     }
