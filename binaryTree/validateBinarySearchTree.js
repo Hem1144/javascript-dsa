@@ -22,7 +22,7 @@ const isValidBST = function (root) {
 
     root = stack.pop();
 
-    // Check the current node's value against the previous node's value
+    //* Check the current node's value against the previous node's value
     if (prev !== null && root.val <= prev.val) {
       return false;
     }
