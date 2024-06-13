@@ -1,17 +1,17 @@
-const maskEmails = (emails, pos) => {
-  const res = [];
+// const maskEmails = (emails, pos) => {
+//   const res = [];
 
-  for (let i = 0; i < emails.length; i++) {
-    const [local, domain] = emails[i].split("@");
-    const firstPart = local.slice(0, -pos) + "*".repeat(pos);
-    res.push(firstPart + "@" + domain);
-  }
-  return res;
-};
+//   for (let i = 0; i < emails.length; i++) {
+//     const [local, domain] = emails[i].split("@");
+//     const firstPart = local.slice(0, -pos) + "*".repeat(pos);
+//     res.push(firstPart + "@" + domain);
+//   }
+//   return res;
+// };
 
-const emailsList = ["vairab@gmail.com", "abc@gmail.com"];
-const maskedEmails = maskEmails(emailsList, 2);
-console.log(maskedEmails);
+// const emailsList = ["vairab@gmail.com", "abc@gmail.com"];
+// const maskedEmails = maskEmails(emailsList, 2);
+// console.log(maskedEmails);
 
 //! Method 2
 
